@@ -1,0 +1,375 @@
+body {
+    background: rgb(12,0,119);
+    background: radial-gradient(circle, rgba(12,0,119,1) 0%, rgba(0,0,0,1) 100%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.logos img {
+    float: left;
+    margin-left: 16px;
+    height: 20px;
+}
+.logos img:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    text-align: center;
+}
+
+
+.navbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: transparent; /* Background color with transparency */
+    width: 100%; 
+    transition: background-color 0.3s;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* Center menu items horizontally */
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.navbar a,
+.navbar a:focus, .goto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.navbar a:hover {
+    font-size: 16px;
+    color: #ffb727;
+}
+
+/** HERO PART **/
+#nickname {
+    color: #1dec73;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("element/palpic1.jpeg") top right;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /* Ensure the navbar is contained within the hero background */
+}
+  
+#hero:before {
+    content: "";
+    background: rgba(74, 68, 68, 0.65);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    
+}
+  
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-family: "Satisfy", serif;
+    color: #fff;
+    text-shadow: 8px 6px 4px rgba(0, 0, 0, 0.43);
+    line-height: 2.2cm;
+    margin-bottom: 32px;
+}
+
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.253);
+}
+
+.goto {
+    background-color: #9f941992;
+    border-radius: 15%;
+}
+
+.goto:hover {
+    background-color: #625a0fe8;
+}
+
+/** ABOUT **/
+
+#about {
+    width: 100%;
+    height: 1600px;
+}
+
+.about-container h1 {
+    font-family: "Satisfy", serif;
+    font-size: 40px;
+    color: #ffaa00;
+    text-align: center;
+    padding-top: 100px;
+    text-shadow: 8px 6px 4px rgba(0, 0, 0, 0.754);
+}
+
+.about-container h2 {
+    color: #caa760;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+#about-moreinfo {
+    color: #caa760;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.about-table table {
+    width: 100%;
+    margin: 32px;
+}
+
+#picture-card, #info-card {
+    width: 50%;
+}
+
+
+#infopic {
+    float: right;
+    max-width: 200px;
+    box-shadow: 8px 10px 8px 0 rgba(0, 0, 0, 0.754);
+    border: 2px solid #ffb727;
+    margin-right: 80px;
+}
+
+#info-card p{
+    margin-left: 0px;
+    font-size: 20px;
+    color: #eee;
+    font-family: "Roboto Mono", monospace;
+}
+
+#info-card b {
+    color: #ffaa00;
+}
+
+
+.skill-headline {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+.skill-headline h1 {
+    font-size: 32px;
+    color: #ec9718;
+}
+.skill-headline p {
+    color: #caa760;
+    text-transform: uppercase;
+}
+
+.skill {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.skill-container {
+    width: 100%;
+    background-color: #868484;
+    border: 2px solid #AF7219;
+}  
+.skills {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    border-right: 2px solid #cea15e;
+}
+.skill p {
+    color: #ffb520;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 1000;
+    
+}
+  
+.html {width: 60%; background-color: #E44C27;}
+.css {width: 50%; background-color: #563E7C;}
+.js {width: 20%; background-color: #a48e1d;}
+.python {width: 60%; background-color: #3673A5;} 
+.java {width: 50%; background-color: #AF7219;}
+.go {width: 30%; background-color: #2196F3;}
+
+/** Experience **/
+
+#experience {
+    width: 100%;
+    height: 1000px;
+
+}
+
+.experience-headline {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 100px;
+}
+.experience-headline h1 {
+    font-size: 40px;
+    color: #ec9718;
+    text-shadow: 8px 6px 4px rgba(0, 0, 0, 0.754);
+    font-family: "Satisfy", serif;
+}
+.experience-headline p {
+    color: #caa760;
+    text-transform: uppercase;
+}
+.experience-container table {
+    width: 100%;
+    margin-top: 60px;
+}
+.experience-container img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 10px 8px 0 rgba(0, 0, 0, 0.754);
+    border: 1px solid #4b360c;
+    box-shadow: 8px 10px 8px 0 rgba(0, 0, 0, 0.754);
+}
+.experience-container h3 {
+
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+}
+.experience-container p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(245, 245, 245, 0.624);
+    font-family: "Roboto Mono", monospace;
+}
+.experience-container h4 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(245, 245, 245, 0.624);
+    font-family: "Roboto Mono", monospace;
+}
+
+/** Contact **/
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-headline {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 100px;
+}
+.contact-headline h1 {
+    font-size: 40px;
+    color: #ec9718;
+    text-shadow: 8px 6px 4px rgba(0, 0, 0, 0.754);
+    font-family: "Satisfy", serif;
+    text-transform: uppercase;
+}
+.contact-headline p {
+    color: #caa760;
+    text-transform: uppercase;
+}
+
+.contact-list {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style-type: none;
+}
+.contact-list img {
+    width: 40px;
+}
+.contact-list p {
+    color: #caa760;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+}
+.contact-list li {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#copyright {
+    font-family: "Roboto", monospace;
+    color: #fff;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/** Optional Animation **/
+html {
+    scroll-behavior: smooth;
+}

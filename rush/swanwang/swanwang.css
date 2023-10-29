@@ -1,0 +1,325 @@
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(273deg, rgb(227, 82, 5) 0%, rgb(228, 208, 55) 100%, rgba(0,18,196,1) 100%);
+    margin: 0; /* Add this to remove default margin */
+    overflow-x: hidden;
+}
+
+.logos img {
+    float: left;
+    margin-left: 20px;
+    height: 25px;
+}
+
+.header {
+    text-align: center;
+}
+
+
+.navbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: transparent; /* Background color with transparency */
+    width: 100%; 
+    transition: background-color 0.3s;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: center; /* Center menu items horizontally */
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.navbar a,
+.navbar a:focus, .goto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #fbdddd;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 12px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+
+.navbar a:hover {
+    font-size: 14px;
+    color: #ffc145;
+}
+
+/** HERO PART **/
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("swanwang-element/HIMSMILE.png") top right;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; /* Ensure the navbar is contained within the hero background */
+}
+  
+#hero:before {
+    content: "";
+    background: rgba(199, 63, 4, 0.529);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+  
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-family: "Satisfy", serif;
+    color: #fff;
+}
+
+#hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.goto {
+    background-color: #ffea0092;
+    border-radius: 15%;
+}
+
+.goto:hover {
+    background-color: #e4d100ce;
+}
+
+/** ABOUT **/
+
+#about {
+    width: 100%;
+    height: auto;
+}
+
+.about-container h1 {
+    font-family: "Satisfy", serif;
+    font-size: 40px;
+    color: #3c2903;
+    text-align: center;
+    padding-top: 100px;
+    text-shadow: 8px 6px 4px rgba(113, 3, 3, 0.754);
+}
+
+.about-container h2 {
+    color: #3c2903;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.about-table table {
+    width: 100%;
+    margin: 32px;
+}
+
+#picture-card, #info-card {
+    width: 50%;
+}
+
+
+#infopic {
+    float: right;
+    max-width: 200px;
+    box-shadow: 8px 10px 8px 0 rgba(0, 0, 0, 0.754);
+    border: 2px solid #181104;
+    margin-right: 80px;
+}
+
+#info-card p{
+    margin-left: 0px;
+    font-size: 20px;
+    color: #462c00;
+    font-family: "Roboto Mono", monospace;
+}
+
+#info-card b {
+    color: #8e5f00;
+}
+
+
+.skill-headline {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
+.skill-headline h1 {
+    font-size: 32px;
+    color: #fff9f9;
+}
+
+.skill {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.skill-container {
+    width: 100%;
+    background-color: #868484;
+    border: 2px solid #633b00;
+}  
+.skills {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    border-right: 2px solid #8b5300;
+}
+.skill p {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 1000;
+    
+}
+  
+.mathematices {width: 70%; background-color: #ff0000;}
+.biology {width: 5%; background-color: #de0000;}
+.chemical {width: 75%; background-color: #bd0000;}
+.python {width: 15%; background-color: #950000;} 
+.english {width: 60%; background-color: #500000;}
+.physics {width: 80%; background-color: #300000;}
+
+/** Experience **/
+
+#experience {
+    width: 100%;
+    height: 500px;
+
+}
+
+.experience-headline {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 100px;
+}
+.experience-headline h1 {
+    font-size: 40px;
+    color: #741b00;
+    text-shadow: 8px 6px 4px rgba(0, 0, 0, 0.754);
+    font-family: "Satisfy", serif;
+}
+.experience-headline p {
+    color: #342e22;
+    text-transform: uppercase;
+}
+.experience-container table {
+    width: 100%;
+    margin-top: 60px;
+}
+.experience-container img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 8px 10px 8px 0 rgba(0, 0, 0, 0.754);
+    border: 1px solid #4b360c;
+    box-shadow: 8px 10px 8px 0 rgba(0, 0, 0, 0.754);
+}
+ 
+
+/** Contact **/
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-headline {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 100px;
+}
+.contact-headline h1 {
+    font-size: 40px;
+    color: #691800;
+    text-shadow: 8px 6px 4px rgba(0, 0, 0, 0.754);
+    font-family: "Satisfy", serif;
+    text-transform: uppercase;
+}
+.contact-headline p {
+    color: #684500;
+    text-transform: uppercase;
+}
+
+.contact-list {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style-type: none;
+}
+.contact-list img {
+    width: 80px;
+}
+.contact-list p {
+    color: #4d3300;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+}
+.contact-list li {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#copyright {
+    font-family: "Roboto", monospace;
+    color: #601d00;
+    text-align: right;
+    margin-right: 20px;
+}
